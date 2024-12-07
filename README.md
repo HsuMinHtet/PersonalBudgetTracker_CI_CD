@@ -75,7 +75,7 @@ List all functional and non-functional requirements of the application.
 - **Version Control**: GitHub
 - **Cloud**: Azure
 ### Prerequisites
-- Java 23 installed
+- Java 21 installed
 - Node.js and npm installed
 - MySQL running locally or on a server
 
@@ -83,7 +83,7 @@ List all functional and non-functional requirements of the application.
 1. Clone the repositories:
 #### Backend
    ```bash
-   git clone https://github.com/HsuMinHtet/PersonalBudgetTracker_Backend.git
+   git clone https://github.com/HsuMinHtet/PersonalBudgetTracker_CI_CD.git
    ```
 #### Frontend
    ```bash
