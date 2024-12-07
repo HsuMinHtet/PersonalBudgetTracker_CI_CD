@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://index.docker.io/v1/
-        username: ${{ secrets.AzureAppService_ContainerUsername_1b3170a422b04ce9822ea301069e810f }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_556a586a391f4867a867c5a626b1205e }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_cc2b751deb254563a3bd12b345430245 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_6f13bc8436c140c98e0de45605ebc11a }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_1b3170a422b04ce9822ea301069e810f }}/hsuminhtet/budgettracker:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_cc2b751deb254563a3bd12b345430245 }}/hsuminhtet/budgettracker:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'budgettracker03'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_241d6a1fcb53475eb83b5575ddb48430 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_1b3170a422b04ce9822ea301069e810f }}/hsuminhtet/budgettracker:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_566d15fcce80426eab1ba924db3f0e63 }}
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_cc2b751deb254563a3bd12b345430245 }}/hsuminhtet/budgettracker:${{ github.sha }}'
