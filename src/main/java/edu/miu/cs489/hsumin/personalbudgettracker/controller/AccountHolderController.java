@@ -16,8 +16,8 @@ import java.util.Optional;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/account-holder")
-@CrossOrigin(origins = "http://localhost:5173")
-//@CrossOrigin(origins = "https://red-smoke-0e9ffbd0f.4.azurestaticapps.net/")
+//@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://red-smoke-0e9ffbd0f.4.azurestaticapps.net/")
 public class AccountHolderController {
 
     private final AccountHolderService accountHolderService;
