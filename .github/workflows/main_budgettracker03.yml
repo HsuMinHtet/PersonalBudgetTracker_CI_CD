@@ -39,6 +39,12 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
 
+    - name: Build Docker image
+      run: docker build -t hsuminhtet/budgettracker:${{ github.run_number }} .
+
+    - name: Push Docker image
+      run: docker push hsuminhtet/budgettracker:${{ github.run_number }}
+
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
