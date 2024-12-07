@@ -45,12 +45,12 @@ jobs:
     - name: Push Docker image
       run: docker push hsuminhtet/budgettracker:${{ github.run_number }}
 
-    - name: Build and push container image to registry
-      uses: docker/build-push-action@v3
-      with:
-        push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_cc2b751deb254563a3bd12b345430245 }}/hsuminhtet/budgettracker:${{ github.sha }}
-        file: ./Dockerfile
+#    - name: Build and push container image to registry
+#      uses: docker/build-push-action@v3
+#      with:
+#        push: true
+#        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_cc2b751deb254563a3bd12b345430245 }}/hsuminhtet/budgettracker:${{ github.sha }}
+#        file: ./Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
