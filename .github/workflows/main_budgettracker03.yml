@@ -66,4 +66,5 @@ jobs:
         app-name: 'budgettracker03'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_566d15fcce80426eab1ba924db3f0e63 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_cc2b751deb254563a3bd12b345430245 }}/hsuminhtet/budgettracker:${{ github.sha }}'
+        images: 'index.docker.io/hsuminhtet/budgettracker:${{ github.run_number }}'
+#        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_cc2b751deb254563a3bd12b345430245 }}/hsuminhtet/budgettracker:${{ github.sha }}'
