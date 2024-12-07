@@ -32,9 +32,13 @@ public class SecurityConfiguration {
                 csrf(CsrfConfigurer::disable)
                  .cors(cors -> cors.configurationSource(request -> {
                      var config = new org.springframework.web.cors.CorsConfiguration();
-                     config.setAllowedOrigins(List.of("http://localhost:5173","https://red-smoke-0e9ffbd0f.4.azurestaticapps.net/")); // Set allowed origins
+                     config.setAllowedOrigins(List.of("http://localhost:5173","https://red-smoke-0e9ffbd0f.4.azurestaticapps.net")); // Set allowed origins
                      config.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")); // Set allowed HTTP methods
-                     config.setAllowedHeaders(List.of("accountholder_id","Authorization", "Content-Type", "Accept")); // Set allowed headers
+                     config.setAllowedHeaders(List.of(
+                             "Authorization", "Content-Type", "Accept",
+                             "X-Requested-With", "Access-Control-Request-Method",
+                             "Access-Control-Request-Headers", "Origin"
+                     )); // Allowed headers// Set allowed headers
                      config.setAllowCredentials(true); // Allow credentials (cookies, Authorization header)
                      return config;
                  }))
