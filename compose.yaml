@@ -10,4 +10,3 @@ services:
       DATASOURCE_URL: jdbc:mysql://mysql-budgettracker.mysql.database.azure.com:3306/budgettracker
       DATASOURCE_USERNAME: hsu
       DATASOURCE_PASSWORD: Budgettracker01
-      SPRING_JPA_DATABASE_PLATFORM:  org.hibernate.dialect.MySQL8Dialect
