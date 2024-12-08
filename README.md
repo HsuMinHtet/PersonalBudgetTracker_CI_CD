@@ -120,5 +120,5 @@ List all functional and non-functional requirements of the application.
 ---
 ## Video Record Link
    ```bash
-   https://mum0-my.sharepoint.com/:v:/r/personal/hhtet_miu_edu/Documents/PersonalBudgetTracker/ProjectDemo.mov?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=gRbIWS
+   https://mum0-my.sharepoint.com/:v:/r/personal/hhtet_miu_edu/Documents/PersonalBudgetTracker/DemoVideo.mov?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=sr7SOg
 ```
