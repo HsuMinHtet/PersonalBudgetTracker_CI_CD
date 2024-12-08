@@ -57,7 +57,7 @@ List all functional and non-functional requirements of the application.
 ---
 
   ## 4. Architecture
-![System Architecture Diagram](assets/SystemArchitecture.png)
+![System Architecture Diagram](assets/SystemArchitecture_1.png)
 
 ---
 
