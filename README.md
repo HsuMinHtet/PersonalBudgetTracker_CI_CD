@@ -68,7 +68,7 @@ List all functional and non-functional requirements of the application.
 
   ## 6. Software Setup Instructions(Locally):
 ### Technologies Used
-- **Backend**: Spring Boot(Java:23,Maven)
+- **Backend**: Spring Boot(Java:21,Maven)
 - **Frontend**: React.js (ver: 18.3.1)
 - **Database**: MySQL
 - **Authentication**: Spring Security
